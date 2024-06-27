@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog preview card</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding-top: 15rem;
+      background-color: hsl(47, 88%, 63%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: figtree;
+    }
+    .blogCard {
+      width: auto;
+      background-color: hsl(0, 0%, 100%);
+      box-shadow: 10px 10px hsl(0, 0%, 7%);
+      padding: 1rem;
+      border-radius: 20px;
+      border: 2px solid black;
+    }
+    img {
+      width: 17rem;
+      border-radius: 10px;
+    }
+    hr {
+      visibility: hidden;
+    }
+    .learning {
+      display: flex;
+      background-color: hsl(47, 88%, 63%);
+      width: 5rem;
+      height: 1.5rem;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+    .colorChange:hover {
+      color: hsl(47, 88%, 63%);
+      cursor: pointer;
+    }
+    .paragraph {
+      width: 17rem;
+      size: 16px;
+      color: hsl(0, 0%, 50%);
+    }
+    .profile {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+    }
+    .avatar {
+      width: 2rem;
+      height: 2rem;
+    }
+    @media screen and (max-width: 375px) {
+      .blogCard {
+        box-shadow: 5px 5px hsl(0, 0%, 7%);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="blogCard">
+    <img src="./assets/images/illustration-article.svg" alt="">
+    <hr>
+    <div class="learning">
+      <p>Learning</p>
+    </div>
+    <div>
+      <p>Published 27 june 2024</p>
+    </div>
+    <div>
+      <h3 class="colorChange">HTML & CSS foundations</h3>
+    </div>
+    <div class="paragraph">
+      <p>
+        These languages are backbone of every website, defining stucture,and content and presentation.
+      </p>
+    </div>
+    <div class="profile">
+      <img class="avatar" src="./assets/images/image-avatar.webp" alt="">
+      <h4>Rounak Sarkar</h4>
+    </div>
+  </div>
+  
+</body>
+</html>
